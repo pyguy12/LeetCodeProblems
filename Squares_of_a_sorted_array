@@ -2,6 +2,11 @@
  * @param {number[]} A
  * @return {number[]}
  */
+ 
+ /* Given an array of integers sorted in non-decreasing order, 
+ return an array of the squares of each number, also in sorted 
+ non-decreasing order. */
+ 
 var sortedSquares = function(A) {
     for (let i = 0; i < A.length; i++) {
         A[i] = Math.pow(A[i],2);
