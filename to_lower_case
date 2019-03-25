@@ -1,0 +1,15 @@
+/* Implement function ToLowerCase() that has a string parameter str, and returns the same string in lowercase. */
+
+let toLowerCase = function(str) {
+    let lowerStr = '';
+    
+    for (let i = 0; i < str.length; i++) {
+        if(str.charCodeAt(i) < 96 && str.charCodeAt(i) >= 65) {
+            lowerStr += String.fromCharCode(str.charCodeAt(i) + 32);
+        } else {
+            lowerStr += str[i];
+        }
+    }
+    
+    return lowerStr;
+};
